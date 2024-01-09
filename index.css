@@ -7,6 +7,12 @@ html, body {
     user-select: none;
 }
 
+h1 {
+  text-align: center;
+  color: #566065;
+  font-family: 'Oswald', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
