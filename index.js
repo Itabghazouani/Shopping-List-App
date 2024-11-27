@@ -5,7 +5,7 @@ import {
   push,
   onValue,
   remove,
-} from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js';
+} from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js';
 
 const appSettings = {
   databaseURL:
@@ -18,6 +18,7 @@ const shoppingListInDB = ref(database, 'shoppingList');
 
 const inputFieldEl = document.getElementById('input-field');
 const addButtonEl = document.getElementById('add-button');
+
 const shoppingListEl = document.getElementById('shopping-list');
 
 addButtonEl.addEventListener('click', function () {
