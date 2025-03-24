@@ -1,10 +1,11 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif;
-    background-color: #E0E5D6;
-    color: #432000;
-    user-select: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #e0e5d6;
+  color: #432000;
+  user-select: none;
 }
 
 h1 {
@@ -14,65 +15,111 @@ h1 {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 30px auto;
 }
 
 img {
-    width: 150px;
-    margin: 0 auto;
+  width: 150px;
+  margin: 0 auto;
 }
 
-input {
-    color: #432000;
-    background-color: #F7F7F7;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    margin: 10px 0;
+input,
+select {
+  color: #432000;
+  background-color: #f7f7f7;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin: 10px 0;
 }
 
 button {
-    color: #FDFDFD;
-    background-color: #F08898;
-    border: 0;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
+  color: #fdfdfd;
+  background-color: #f08898;
+  border: 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin-top: 10px;
 }
 
 button:hover {
-    background-color: #95D6D3;
-    cursor: pointer;
+  background-color: #95d6d3;
+  cursor: pointer;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.filter-container label {
+  margin-right: 10px;
+}
+
+.filter-container select {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 ul li {
-    font-size: 20px;
-    background-color: #FEEC99;
-    padding: 15px;
-    border-radius: 8px;
-    flex-grow: 1;
-    text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+  font-size: 20px;
+  background-color: #feec99;
+  padding: 15px;
+  border-radius: 8px;
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+ul li[data-shop='Aldi'] {
+  background-color: #00b0e5;
+}
+
+ul li[data-shop='Consum'] {
+  background-color: #f29633;
+}
+
+ul li[data-shop='Ametller'] {
+  background-color: #f2e8ca;
+}
+
+ul li[data-shop='Mercat'] {
+  background-color: #b67479;
+}
+
+ul li[data-shop='Condis'] {
+  background-color: #049d86;
+}
+
+ul li[data-shop='Autre'] {
+  background-color: #bba79d;
 }
 
 ul li:hover {
-    background-color: #d11e2a;
-    color: #F7F7F7;
-    cursor: pointer;
+  background-color: #d11e2a;
+  color: #f7f7f7;
+  cursor: pointer;
 }

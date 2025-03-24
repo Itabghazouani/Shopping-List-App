@@ -24,7 +24,16 @@
     <div class="container">
       <img src="assets/cart-shopping.png" />
       <input type="text" id="input-field" placeholder="Miam miam" />
+      <select id="shop-select">
+        <option value="" disabled selected>Select a shop</option>
+      </select>
       <button id="add-button">Add to cart</button>
+      <div class="filter-container">
+        <label>Filter by shop: </label>
+        <select id="filter-select">
+          <option value="all">All shops</option>
+        </select>
+      </div>
       <ul id="shopping-list"></ul>
     </div>
     <script src="index.js" type="module"></script>
